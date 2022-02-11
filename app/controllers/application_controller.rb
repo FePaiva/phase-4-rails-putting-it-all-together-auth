@@ -3,9 +3,6 @@ class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
   before_action :authorize_user
-
-
-  
   
   # checks if the user is logged in or not
   # def current_user
